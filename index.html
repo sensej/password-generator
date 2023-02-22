@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normilize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+    <title>Password generator</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="app">
+                <div class="app-left-side">
+                    <h1 class="app-title">Password generator</h1>
+                    <div class="app-settings">
+                        <div class="app-settings__box">
+                            <input type="text" class="app-input">
+                            <div class="app-password-strange">
+                                <span class="app-password-strange__item"></span>
+                                <span class="app-password-strange__item"></span>
+                                <span class="app-password-strange__item"></span>
+                                <span class="app-password-strange__item"></span>
+                            </div>
+                            <button class="app-btn-refresh">
+                                <img src="src/refresh.png" alt="Refresh password">
+                            </button>
+                        </div>
+
+                        <button class="app-btn">
+                            <span class="app-btn__text">Copy password_</span>
+                            <span class="app-btn__icon"></span>
+                            <span class="app-btn__decor">R25</span>
+                        </button>
+                        <div class="app-range-box">
+                            <output class="app-range__output" id="amount" for="passwordLength">15</output>
+                            <input type="range" class="app-range" min="0" max="100" value="15" id="passwordLength" oninput="amount.value = passwordLength.value">
+                        </div>
+                        <div class="app-password__settings">
+                            <ul class="app-password__settings-list">
+                                <li class="app-password__settings-list-item">
+                                    <label class="app-custom-checkbox">
+                                        <input type="checkbox" name="passwordSetting" id="uppercase">
+                                        <label for="uppercase">Uppercase letters</label>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="app-password__settings-list-item">
+                                    <label class="app-custom-checkbox">
+                                        <input type="checkbox" name="passwordSetting" id="lowercase">
+                                        <label for="lowercase">Lowercase letters</label>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="app-password__settings-list-item">
+                                    <label class="app-custom-checkbox">
+                                        <input type="checkbox" name="passwordSetting" id="numbers" checked>
+                                        <label for="numbers">Numbers</label>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="app-password__settings-list-item">
+                                    <label class="app-custom-checkbox">
+                                        <input type="checkbox" name="passwordSetting" id="symbols">
+                                        <label for="symbols">Symbols</label>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-right-side">
+                    <h3 class="app-subtitle">Password history</h3>
+                    <ul class="app-password__list">
+                        <li class="app-password__list-item">
+                            <span class="app-password__list-item-text">1a4Txe3m*%Qm^vdXs!</span>
+                            <button class="app-password__list-item-btn">
+                                <img src="src/copy.png" alt="">
+                            </button>
+                        </li>
+                        <li class="app-password__list-item">
+                            <span class="app-password__list-item-text">06iHHUY1nz!TMYt98#vt</span>
+                            <button class="app-password__list-item-btn">
+                                <img src="src/copy.png" alt="">
+                            </button>
+                        </li>
+                        <li class="app-password__list-item">
+                            <span class="app-password__list-item-text">wEkPS8^Q0ny5nk^DBj2n</span>
+                            <button class="app-password__list-item-btn">
+                                <img src="src/copy.png" alt="">
+                            </button>
+                        </li>
+                        <li class="app-password__list-item">
+                            <span class="app-password__list-item-text">#6^TPbTO8EN8VHmwylg*</span>
+                            <button class="app-password__list-item-btn">
+                                <img src="src/copy.png" alt="">
+                            </button>
+                        </li>
+                        <li class="app-password__list-item">
+                            <span class="app-password__list-item-text">WmZTy&82jQ$w1F2^fxj$</span>
+                            <button class="app-password__list-item-btn">
+                                <img src="src/copy.png" alt="">
+                            </button>
+                        </li>
+                        <li class="app-password__list-item">
+                            <span class="app-password__list-item-text">1a4Txe3m*%Qm^vdXs!</span>
+                            <button class="app-password__list-item-btn">
+                                <img src="src/copy.png" alt="">
+                            </button>
+                        </li>
+                        <li class="app-password__list-item">
+                            <span class="app-password__list-item-text">1a4Txe3m*%Qm^vdXs!</span>
+                            <button class="app-password__list-item-btn">
+                                <img src="src/copy.png" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                    <button class="app-btn-clear">Clear history</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress">
+            <img src="src/progress.gif" alt="">
+            <span>Work in progress...</span>
+        </div>
+    </div>
+</body>
+</html>
