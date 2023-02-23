@@ -18,7 +18,7 @@
                     <h1 class="app-title">Password generator</h1>
                     <div class="app-settings">
                         <div class="app-settings__box">
-                            <input type="text" class="app-input">
+                            <input type="text" class="app-input" id="mainInput" readonly>
                             <div class="app-password-strange">
                                 <span class="app-password-strange__item"></span>
                                 <span class="app-password-strange__item"></span>
@@ -36,35 +36,35 @@
                             <span class="app-btn__decor">R25</span>
                         </button>
                         <div class="app-range-box">
-                            <output class="app-range__output" id="amount" for="passwordLength">15</output>
-                            <input type="range" class="app-range" min="0" max="100" value="15" id="passwordLength" oninput="amount.value = passwordLength.value">
+                            <output class="app-range__output" id="amount" for="passwordLength"></output>
+                            <input type="range" class="app-range" min="0" max="100" value="85" id="passwordLength">
                         </div>
                         <div class="app-password__settings">
                             <ul class="app-password__settings-list">
                                 <li class="app-password__settings-list-item">
                                     <label class="app-custom-checkbox">
-                                        <input type="checkbox" name="passwordSetting" id="uppercase">
+                                        <input type="checkbox" class="app-checkbox" name="passwordSetting" id="uppercase" checked>
                                         <label for="uppercase">Uppercase letters</label>
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li class="app-password__settings-list-item">
                                     <label class="app-custom-checkbox">
-                                        <input type="checkbox" name="passwordSetting" id="lowercase">
+                                        <input type="checkbox" class="app-checkbox" name="passwordSetting" id="lowercase">
                                         <label for="lowercase">Lowercase letters</label>
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li class="app-password__settings-list-item">
                                     <label class="app-custom-checkbox">
-                                        <input type="checkbox" name="passwordSetting" id="numbers" checked>
+                                        <input type="checkbox" class="app-checkbox" name="passwordSetting" id="numbers">
                                         <label for="numbers">Numbers</label>
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li class="app-password__settings-list-item">
                                     <label class="app-custom-checkbox">
-                                        <input type="checkbox" name="passwordSetting" id="symbols">
+                                        <input type="checkbox" class="app-checkbox" name="passwordSetting" id="symbols">
                                         <label for="symbols">Symbols</label>
                                         <span class="checkmark"></span>
                                     </label>
@@ -129,5 +129,7 @@
             <span>Work in progress...</span>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

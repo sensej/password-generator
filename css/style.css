@@ -129,7 +129,7 @@ ul {
 
 .app-input{
     width: 100%;
-    padding: 20px;
+    padding: 20px 92px 20px 20px;
     max-height: 64px;
     outline: none;
     background: rgba(0, 240, 255, 0.1);
@@ -139,6 +139,7 @@ ul {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2rem;
+    cursor: copy;
 }
 
 .app-btn {
@@ -232,7 +233,7 @@ input[type=range]::-webkit-slider-thumb {
     position: absolute;
     color: #fff;
     top: 35px;
-    left: calc(15%);
+    /*left: calc(15%);*/
     font-family: 'Barlow', sans-serif;
     font-size: 12px;
     line-height: 16px;
