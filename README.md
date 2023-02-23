@@ -2,7 +2,7 @@
 https://sensej.github.io/password-generator/
 
 TODO:
-refresh button
-add password in history
-show strange of password
-responsive design
+1: refresh button;
+2: add password in history;
+3: show strong of password;
+4: responsive design.
